@@ -24,14 +24,11 @@ public class MainWindow extends Frame {
 		JMenu solveMenu = new SolveMenu();
 		
 		
+		
 		menuBar.add(solveMenu);
 		
 		setJMenuBar(menuBar);
 
-	}
-	
-	protected void finalize() {
-		super.finalize();
 	}
 
 }

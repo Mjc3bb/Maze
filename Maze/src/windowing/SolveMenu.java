@@ -1,6 +1,10 @@
 package windowing;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.Action;
+import javax.swing.JMenuItem;
 
 public class SolveMenu extends MenuList {
 
@@ -11,7 +15,13 @@ public class SolveMenu extends MenuList {
 	}
 
 	public void run() {
-		
+		JMenuItem loadMaze = new JMenuItem("Load a maze...");
+		loadMaze.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Loading");
+			}
+		});
+		add(loadMaze);
 	}
 
 }

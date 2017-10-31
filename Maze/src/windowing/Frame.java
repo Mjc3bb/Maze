@@ -1,4 +1,4 @@
-package windowing;
+	package windowing;
 
 import java.awt.GraphicsConfiguration;
 import java.awt.HeadlessException;
